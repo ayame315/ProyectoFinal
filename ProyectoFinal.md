@@ -15,14 +15,14 @@ Yaneth Mejía
 Código:
 
 
-#include "mbed.h"
-#include "stdio.h"
-#include "string.h"
+#include "mbed.h"   
+#include "stdio.h"   
+#include "string.h"   
 
-Timer t;
-Serial sim800(PTE0,PTE1,9600);      //Serial SIM800C
-Serial gps(PTE22,PTE23,9600);       //Serial NEO6MV2
-Serial pc(USBTX,USBRX,9600);        //Serial al computador
+Timer t;    
+Serial sim800(PTE0,PTE1,9600);      //Serial SIM800C     
+Serial gps(PTE22,PTE23,9600);       //Serial NEO6MV2    
+Serial pc(USBTX,USBRX,9600);        //Serial al computador     
 
 char gprsBuffer[20];
 char cDataBuffer[550];
