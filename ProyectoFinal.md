@@ -32,10 +32,10 @@ int count=0;
 /////////////FUNCIONES/////////////////////////////////////////////////////////    
  
 //Leer Bufer GPRS  
-int readBuffer(char *buffer,int count){    
-    int i=0;   
-    t.start();  // Inicia timer   
-    while(1) {   
+int readBuffer(char *buffer,int count){
+    int i=0;
+    t.start();  // Inicia timer
+    while(1) {
         while (sim800.readable()) {    
             char c = sim800.getc();    
             if (c == '\r' || c == '\n') c = '$';    
